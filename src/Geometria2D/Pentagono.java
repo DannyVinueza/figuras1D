@@ -3,7 +3,7 @@ package Geometria2D;
 public class Pentagono {
     double apotema;
     double perimetro;
-    int nLados;
+    double lonLado;
 
     public double getApotema() {
         return apotema;
@@ -21,12 +21,12 @@ public class Pentagono {
         this.perimetro = perimetro;
     }
 
-    public int getnLados() {
-        return nLados;
+    public double getLonLado() {
+        return lonLado;
     }
 
-    public void setnLados(int nLados) {
-        this.nLados = nLados;
+    public void setLonLado(double lonLado) {
+        this.lonLado = lonLado;
     }
 
     public Pentagono(double apotema, double perimetro) {
@@ -34,12 +34,15 @@ public class Pentagono {
         this.perimetro = perimetro;
     }
 
-    public Pentagono(int nLados) {
-        this.nLados = nLados;
+    public Pentagono(double lonLado) {
+        this.lonLado = lonLado;
     }
 
     public double areaPent(Pentagono pentagono){
         return ((pentagono.getPerimetro()*pentagono.getApotema())/2);
     }
 
+    public double periPent(Pentagono pentagono){
+        return ((pentagono.getLonLado() * 5 ));
+    }
 }
