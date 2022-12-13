@@ -57,13 +57,11 @@ public class Main {
                                     double apo, perimetro, lado;
                                     System.out.print("Ingrese el apotema: ");
                                     apo = sc.nextDouble();
-                                    System.out.print("Ingrese el perimetro: ");
-                                    perimetro = sc.nextInt();
                                     System.out.print("Ingrese la longitud del lado: ");
                                     lado = sc.nextDouble();
-                                    Pentagono pentagono = new Pentagono(apo, perimetro);
+                                    Pentagono pentagono = new Pentagono();
                                     Pentagono pentagonoP = new Pentagono(lado);
-                                    System.out.println("El area del pentagono es: " + dc.format(pentagono.areaPent(pentagono)));
+                                    System.out.println("El area del pentagono es: " + dc.format(pentagono.areaPent(apo, pentagonoP.periPent(pentagonoP))));
                                     System.out.println("El perimetro del pentagono es: " + dc.format(pentagonoP.periPent(pentagonoP)));
                                 }break;
                                 case 10:{

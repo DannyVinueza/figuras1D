@@ -29,17 +29,13 @@ public class Pentagono {
         this.lonLado = lonLado;
     }
 
-    public Pentagono(double apotema, double perimetro) {
-        this.apotema = apotema;
-        this.perimetro = perimetro;
-    }
-
     public Pentagono(double lonLado) {
         this.lonLado = lonLado;
     }
-
-    public double areaPent(Pentagono pentagono){
-        return ((pentagono.getPerimetro()*pentagono.getApotema())/2);
+    public Pentagono() {
+    }
+    public double areaPent(double pentagono, double perimetro){
+        return (((perimetro)*pentagono)/2);
     }
 
     public double periPent(Pentagono pentagono){
