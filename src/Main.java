@@ -10,12 +10,12 @@ public class Main {
     static DecimalFormat dc = new DecimalFormat("##.00");
     public static void main(String[] args) {
         System.out.println("Hello world!");
-        double apo, perimetro;
-        System.out.println("Ingrese el apotema: ");
-        apo = sc.nextDouble();
+        double rad, perimetro;
+        System.out.println("Ingrese el radio: ");
+        rad = sc.nextDouble();
         System.out.println("Ingrese el perimetro: ");
         perimetro = sc.nextInt();
-        Pentagono pentagono = new Pentagono(apo, perimetro);
-        System.out.println("El area del pentagono es: " + dc.format(pentagono.areaPent(pentagono)));
+        circuloBlanco circuloBlanco = new circuloBlanco(rad, perimetro);
+        System.out.println("El area del circulo es: " + dc.format(circuloBlanco.areaCir (circuloBlanco)));
     }
 }
