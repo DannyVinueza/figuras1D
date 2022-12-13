@@ -9,7 +9,6 @@ public class Main {
     static Scanner sc = new Scanner(System.in);
     static DecimalFormat dc = new DecimalFormat("##.00");
     public static void main(String[] args) {
-        System.out.println("Hello world!");
         double apo, perimetro;
         System.out.println("Ingrese el apotema: ");
         apo = sc.nextDouble();
