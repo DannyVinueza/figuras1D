@@ -30,6 +30,6 @@ public class Decagono {
         this.perimetro = perimetro;
     }
     public double areaDeca (Decagono decagono){
-        return ((decagono.getPerimetro()*decagono.getApotema()/2);
+        return ((decagono.getPerimetro()*decagono.getApotema())/2);
     }
 }

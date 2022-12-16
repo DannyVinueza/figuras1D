@@ -3,7 +3,7 @@ package Geometria2D;
 public class Pentagono {
     double apotema;
     double perimetro;
-    int nLados;
+    double nLados;
 
     public double getApotema() {
         return apotema;

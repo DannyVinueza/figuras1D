@@ -1,7 +1,7 @@
 package Geometria2D;
 
-public class Eneagono {
-    private int lado=9;
+public class Endecagono {
+    private int lado=11;
     double lados;
     double apotema;
 
@@ -25,11 +25,13 @@ public class Eneagono {
         return lado;
     }
 
-    public Eneagono(double lados, double apotema) {
+    public Endecagono(double lados, double apotema) {
         this.lados = lados;
         this.apotema = apotema;
     }
-    public double areaEne (Eneagono eneagono){
-        return ((eneagono.getLado()*eneagono.getApotema()*eneagono.getLados())/2);
+    public double areaEnde(Endecagono endecagono){
+        return ((endecagono.getLado()*endecagono.getLados()*endecagono.getApotema())/2);
     }
 }
+
+
