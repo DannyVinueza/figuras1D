@@ -21,5 +21,13 @@ public class Piramide {
         return Math.pow(piramide.getLadoBase() ,2);
     }
 
-    //Perimetro de la
+    //Perimetro de la Base
+    public double perimetroBase(Piramide piramide){
+        return (piramide.getLadoBase() * 4) / 2;
+    }
+
+    //Volumen de la Base
+    public double volumenPiramide(Piramide piramide){
+        return (Math.pow(piramide.getLadoBase(),2) * piramide.getAltura())/3;
+    }
 }
