@@ -1,4 +1,5 @@
 import Geometria2D.*;
+import Geometria3D.*;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
@@ -51,6 +52,7 @@ public class Main {
                                 }break;
                                 case 8:{
                                     System.out.println("8. Octogono");
+
                                 }break;
                                 case 9:{
                                     System.out.println("9. Pentagono");
@@ -83,33 +85,164 @@ public class Main {
                             switch(opcionF3D){
                                 case 1:{
                                     System.out.println("1. Cilindro");
+                                    double alturaCil, radioCil;
+                                    System.out.print("Ingrese el valor de la altura: ");
+                                    alturaCil = sc.nextDouble();
+                                    System.out.print("Ingrese el valor del radio: ");
+                                    radioCil = sc.nextDouble();
+                                    Cilindro cilindro = new Cilindro(alturaCil,radioCil);
+
+                                    System.out.println("\tResultados: ");
+                                    System.out.println("Volumen: " + dc.format(cilindro.volumen(cilindro)));
+                                    System.out.println("Area de la Base: " + dc.format(cilindro.areaBase(cilindro)));
+                                    System.out.println("Superficie Lateral: " + dc.format(cilindro.supLateral(cilindro)));
                                 }break;
                                 case 2:{
                                     System.out.println("2. Cono");
+                                    double radioCono, alturaCono, apotemaCono;
+                                    System.out.print("Radio: ");
+                                    radioCono = sc.nextDouble();
+                                    System.out.print("Altura: ");
+                                    alturaCono = sc.nextDouble();
+                                    System.out.print("Apotema: ");
+                                    apotemaCono = sc.nextDouble();
+
+                                    Cono cono = new Cono(radioCono, alturaCono, apotemaCono);
+
+                                    System.out.println("\tResultados: ");
+                                    System.out.println("Volumen: " + dc.format(cono.supLateral(cono)));
+                                    System.out.println("Superficie Lateral" + dc.format(cono.volumen(cono)));
+                                    System.out.println("Area de la Base" + dc.format(cono.areaBase(cono)));
                                 }break;
                                 case 3:{
                                     System.out.println("3. Cubo");
+                                    double diagonalCubo, ladoCubo;
+
+                                    System.out.println("Diagonal: ");
+                                    diagonalCubo = sc.nextDouble();
+                                    System.out.println("Lado: ");
+                                    ladoCubo = sc.nextDouble();
+
+                                    Cubo cubo = new Cubo(diagonalCubo, ladoCubo);
+
+                                    System.out.println("\tResultados: ");
+                                    System.out.println("Volumen: " + dc.format(cubo.volumen(cubo)));
+                                    System.out.println("Area de la Base: " + dc.format(cubo.areaBase(cubo)));
+                                    System.out.println("Diagonal Base" + dc.format(cubo.diagonalBase(cubo)));
                                 }break;
                                 case 4:{
                                     System.out.println("4. Esfera");
+                                    double radioEsfera;
+
+                                    System.out.println("Radio: ");
+                                    radioEsfera = sc.nextDouble();
+
+                                    Esfera esfera = new Esfera(radioEsfera);
+
+                                    System.out.println("\tResultados: ");
+                                    System.out.println("Volumen: " + dc.format(esfera.volumen(esfera)));
+                                    System.out.println("Area Total: " + dc.format(esfera.areaTotal(esfera)));
+                                    System.out.println("Circunferencia" + dc.format(esfera.circunferencia(esfera)));
                                 }break;
                                 case 5:{
                                     System.out.println("5. Ortoedro");
+                                    double ortoA, ortoB, ortoC;
+
+                                    System.out.println("Lado A: ");
+                                    ortoA = sc.nextDouble();
+                                    System.out.println("Lado B: ");
+                                    ortoB = sc.nextDouble();
+                                    System.out.println("Lado C: ");
+                                    ortoC = sc.nextDouble();
+
+                                    Ortoedro ortoedro = new Ortoedro(ortoA,ortoB,ortoC);
+
+                                    System.out.println("\tResultados: ");
+                                    System.out.println("Volumen: " + dc.format(ortoedro.volumen(ortoedro)));
+                                    System.out.println("Area: " + dc.format(ortoedro.area(ortoedro)));
+                                    System.out.println("Diagonal Interna: " + dc.format(ortoedro.diagonalInterna(ortoedro)));
                                 }break;
                                 case 6:{
                                     System.out.println("6. Piramide");
+                                    double basePiramide, alturaPiramide;
+
+                                    System.out.println("Lado Base: ");
+                                    basePiramide = sc.nextDouble();
+                                    System.out.println("Altura: ");
+                                    alturaPiramide = sc.nextDouble();
+
+                                    Piramide piramide = new Piramide(basePiramide, alturaPiramide);
+
+                                    System.out.println("\tResultados: ");
+                                    System.out.println("Area de la Base: " + dc.format(piramide.areaBase(piramide)));
+                                    System.out.println("Perimetro de la Base: " + dc.format(piramide.perimetroBase(piramide)));
+                                    System.out.println("Volumen: " + dc.format(piramide.volumenPiramide(piramide)));
                                 }break;
                                 case 7:{
                                     System.out.println("7. Piramide Hexagonal");
+                                    double ladoPiramHexa, alturaPiramHexa, apotemaPiramHexa;
+
+                                    System.out.println("Lado: ");
+                                    ladoPiramHexa = sc.nextDouble();
+                                    System.out.println("Altura: ");
+                                    alturaPiramHexa = sc.nextDouble();
+                                    System.out.println("Apotema: ");
+                                    apotemaPiramHexa = sc.nextDouble();
+
+                                    piramideHexagonal piramideHexagonal = new piramideHexagonal(ladoPiramHexa, alturaPiramHexa, apotemaPiramHexa);
+
+                                    System.out.println("\tResultados: ");
+                                    System.out.println("Volumen: " + dc.format(piramideHexagonal.volumen(piramideHexagonal)));
+                                    System.out.println("Perimetro de la Base: " + dc.format(piramideHexagonal.perimetroBase(piramideHexagonal)));
+                                    System.out.println("Area de la base: " + dc.format(piramideHexagonal.areaBase(piramideHexagonal)));
                                 }break;
                                 case 8:{
                                     System.out.println("8. Prisma Pentagular");
+                                    double apotemaPP, ladoPP, alturaPP;
+
+                                    System.out.println("Apotema: ");
+                                    apotemaPP = sc.nextDouble();
+                                    System.out.println("Lado: ");
+                                    ladoPP = sc.nextDouble();
+                                    System.out.println("Altura: ");
+                                    alturaPP = sc.nextDouble();
+
+                                    prismaPentagular prismaPentagular = new prismaPentagular(apotemaPP, ladoPP, alturaPP);
+
+                                    System.out.println("\tResultados: ");
+                                    System.out.println("Volumen: " + dc.format(prismaPentagular.volumen(prismaPentagular)));
+                                    System.out.println("Area: " + dc.format(prismaPentagular.area(prismaPentagular)));
+                                    System.out.println("Area de la base: " + dc.format(prismaPentagular.areaBase(prismaPentagular)));
                                 }break;
                                 case 9:{
                                     System.out.println("9. Prisma Triangular");
+                                    double ladoPT, altuaPT;
+
+                                    System.out.println("Lado: ");
+                                    ladoPT = sc.nextDouble();
+                                    System.out.println("Altura: ");
+                                    altuaPT = sc.nextDouble();
+
+                                    prismaTriangular prismaTriangular = new prismaTriangular(ladoPT, altuaPT);
+
+                                    System.out.println("\tResultados: ");
+                                    System.out.println("Volumen: " + dc.format(prismaTriangular.volumen(prismaTriangular)));
+                                    System.out.println("Area: " + dc.format(prismaTriangular.area(prismaTriangular)));
+                                    System.out.println("Area de la base: " + dc.format(prismaTriangular.areaBase(prismaTriangular)));
                                 }break;
                                 case 10:{
                                     System.out.println("10. Tetrahedro");
+                                    double aristaTetra;
+
+                                    System.out.println("Arista: ");
+                                    aristaTetra = sc.nextDouble();
+
+                                    Tetrahedro tetrahedro = new Tetrahedro(aristaTetra);
+
+                                    System.out.println("\tResultados: ");
+                                    System.out.println("Volumen: " + dc.format(tetrahedro.volumen(tetrahedro)));
+                                    System.out.println("Area: " + dc.format(tetrahedro.area(tetrahedro)));
+                                    System.out.println("Area de la Cara: " + dc.format(tetrahedro.areaCara(tetrahedro)));
                                 }break;
                                 case 11:{
                                     System.out.println(VERDE + "Saliendo...." + RESET);
