@@ -1,4 +1,8 @@
 						**FIGURAS GEOMETRICAS CALCULO DE AREAS, PERIMETROS, VOLUMENES**
+## Integrantes:
+#### - Néstor Chumania
+#### - Danny Vinueza
+#### - Daniel Quishpe
 En el siguiente repositorio se encuentra realizado un progrma para el calculo de areas, perimetros y volumenes de figuras geometricas.
 Este programa echo en java con el IDE IntelliJ IDEA utiliza dos package uno llamado Geometria2D y el segundo llamado Geometria3D en la cual ambos tienen 10 clases correspondientes
 a 10 figuras geometricas.
