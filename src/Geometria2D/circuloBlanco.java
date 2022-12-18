@@ -37,5 +37,8 @@ public class circuloBlanco {
     public double areaCir (circuloBlanco circuloBlanco){
         return ((circuloBlanco.getPi()*circuloBlanco.getRadio())/2);
     }
+    public double periCir (circuloBlanco circuloBlanco){
+        return ((2*circuloBlanco.getPi()*circuloBlanco.getRadio()));
+    }
 
 }

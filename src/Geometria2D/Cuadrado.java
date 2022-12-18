@@ -15,6 +15,9 @@ public class Cuadrado {
         this.lado = lado;
     }
     public double areaCua (Cuadrado cuadrado){
-        return ((cuadrado.getLado())*2);
+        return ((cuadrado.getLado())* cuadrado.getLado());
+    }
+    public double periCua(Cuadrado cuadrado){
+        return ((cuadrado.getLado()+cuadrado.getLado()+ cuadrado.getLado()+ cuadrado.getLado()));
     }
 }
