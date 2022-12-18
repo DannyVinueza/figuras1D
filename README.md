@@ -1,4 +1,4 @@
-						**FIGURAS GEOMETRICAS CALCULO DE AREAS, PERIMETROS, VOLUMENES**
+					#	**FIGURAS GEOMETRICAS CALCULO DE AREAS, PERIMETROS, VOLUMENES**
 ## Integrantes:
 #### - Néstor Chumania
 #### - Danny Vinueza
